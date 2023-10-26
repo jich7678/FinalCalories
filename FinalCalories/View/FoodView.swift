@@ -14,18 +14,14 @@ struct FoodView: View {
     var body: some View {
         NavigationView {
             VStack {
-                
                 Text("Meal List")
                     .font(.title)
                     .padding(10)
-                
                 List(foodViewModel.ingredients) { ingredient in
                     VStack {
-                            
                         VStack(alignment: .leading) {
                             Text("\(ingredient.meals.idIngredient). \(ingredient.meals.strIngredient)")
                         }
-                        
                         Spacer()
                     }
                 }
