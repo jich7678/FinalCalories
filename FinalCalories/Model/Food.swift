@@ -7,13 +7,13 @@
 
 import Foundation
 
-struct Ingredient: Codable, Identifiable {
-    var id: Int { return UUID().hashValue }
-    var meals: Categories
+struct Ingredient: Codable{
+    var meals: [MealDetail]
 }
 
-struct Categories: Codable {
+struct MealDetail: Codable, Identifiable {
     var idIngredient: String
     var strIngredient: String
-    var strDescription: String
+    var strDescription: String?
+    var id: String { idIngredient }
 }

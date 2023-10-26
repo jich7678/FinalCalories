@@ -17,10 +17,10 @@ struct FoodView: View {
                 Text("Meal List")
                     .font(.title)
                     .padding(10)
-                List(foodViewModel.ingredients) { ingredient in
+                List(foodViewModel.meals) { ingredient in
                     VStack {
                         VStack(alignment: .leading) {
-                            Text("\(ingredient.meals.idIngredient). \(ingredient.meals.strIngredient)")
+                            Text("\(ingredient.idIngredient). \(ingredient.strIngredient)")
                         }
                         Spacer()
                     }

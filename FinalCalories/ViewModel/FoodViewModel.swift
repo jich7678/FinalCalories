@@ -9,7 +9,7 @@ import Foundation
 
 class FoodViewModel: ObservableObject {
     
-    @Published var ingredients = [Ingredient]()
+    @Published var meals = [MealDetail]()
     
     func getIngredient() {
         Task { @MainActor in
@@ -17,7 +17,8 @@ class FoodViewModel: ObservableObject {
                 let url = URL(string: "https://www.themealdb.com/api/json/v1/1/list.php?i=list")!
                 let (data, _) = try await URLSession.shared.data(from: url)
                 print(data)
-                ingredients = try JSONDecoder().decode([Ingredient].self, from: data)
+                let ingredients = try JSONDecoder().decode(Ingredient.self, from: data)
+                meals = ingredients.meals
             } catch {
                 print("Error: \(error.localizedDescription)")
             }
