@@ -6,3 +6,14 @@
 //
 
 import Foundation
+
+struct Ingredient: Codable, Identifiable {
+    var id: Int { return UUID().hashValue }
+    var meals: Categories
+}
+
+struct Categories: Codable {
+    var idIngredient: String
+    var strIngredient: String
+    var strDescription: String
+}

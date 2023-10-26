@@ -7,18 +7,36 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct FoodView: View {
+    
+    @ObservedObject var foodViewModel = FoodViewModel()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationView {
+            VStack {
+                
+                Text("Meal List")
+                    .font(.title)
+                    .padding(10)
+                
+                List(foodViewModel.ingredients) { ingredient in
+                    VStack {
+                            
+                        VStack(alignment: .leading) {
+                            Text("\(ingredient.meals.idIngredient). \(ingredient.meals.strIngredient)")
+                        }
+                        
+                        Spacer()
+                    }
+                }
+            }
         }
-        .padding()
+        .onAppear {
+            foodViewModel.getIngredient()
+        }
     }
 }
 
 #Preview {
-    ContentView()
+    FoodView()
 }

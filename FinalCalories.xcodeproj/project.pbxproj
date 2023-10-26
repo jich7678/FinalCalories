@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		C23A03212AEA497500241493 /* FinalCaloriesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23A03202AEA497500241493 /* FinalCaloriesApp.swift */; };
-		C23A03232AEA497500241493 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23A03222AEA497500241493 /* ContentView.swift */; };
+		C23A03232AEA497500241493 /* FoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23A03222AEA497500241493 /* FoodView.swift */; };
 		C23A03252AEA497900241493 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C23A03242AEA497900241493 /* Assets.xcassets */; };
 		C23A03292AEA497900241493 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C23A03282AEA497900241493 /* Preview Assets.xcassets */; };
 		C23A03332AEA497A00241493 /* FinalCaloriesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23A03322AEA497A00241493 /* FinalCaloriesTests.swift */; };
 		C23A033D2AEA497A00241493 /* FinalCaloriesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23A033C2AEA497A00241493 /* FinalCaloriesUITests.swift */; };
 		C23A033F2AEA497A00241493 /* FinalCaloriesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23A033E2AEA497A00241493 /* FinalCaloriesUITestsLaunchTests.swift */; };
+		C23A034C2AEA4AB200241493 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23A034B2AEA4AB200241493 /* Food.swift */; };
+		C23A034F2AEA55C200241493 /* FoodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23A034E2AEA55C200241493 /* FoodViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		C23A031D2AEA497500241493 /* FinalCalories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalCalories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C23A03202AEA497500241493 /* FinalCaloriesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalCaloriesApp.swift; sourceTree = "<group>"; };
-		C23A03222AEA497500241493 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C23A03222AEA497500241493 /* FoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodView.swift; sourceTree = "<group>"; };
 		C23A03242AEA497900241493 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C23A03262AEA497900241493 /* FinalCalories.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FinalCalories.entitlements; sourceTree = "<group>"; };
 		C23A03282AEA497900241493 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -45,6 +47,8 @@
 		C23A03382AEA497A00241493 /* FinalCaloriesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinalCaloriesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C23A033C2AEA497A00241493 /* FinalCaloriesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalCaloriesUITests.swift; sourceTree = "<group>"; };
 		C23A033E2AEA497A00241493 /* FinalCaloriesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalCaloriesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C23A034B2AEA4AB200241493 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		C23A034E2AEA55C200241493 /* FoodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +99,10 @@
 		C23A031F2AEA497500241493 /* FinalCalories */ = {
 			isa = PBXGroup;
 			children = (
+				C23A034D2AEA4ABF00241493 /* Model */,
+				C23A03502AEA55DB00241493 /* ViewModel */,
+				C23A03512AEA55ED00241493 /* View */,
 				C23A03202AEA497500241493 /* FinalCaloriesApp.swift */,
-				C23A03222AEA497500241493 /* ContentView.swift */,
 				C23A03242AEA497900241493 /* Assets.xcassets */,
 				C23A03262AEA497900241493 /* FinalCalories.entitlements */,
 				C23A03272AEA497900241493 /* Preview Content */,
@@ -127,6 +133,30 @@
 				C23A033E2AEA497A00241493 /* FinalCaloriesUITestsLaunchTests.swift */,
 			);
 			path = FinalCaloriesUITests;
+			sourceTree = "<group>";
+		};
+		C23A034D2AEA4ABF00241493 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C23A034B2AEA4AB200241493 /* Food.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C23A03502AEA55DB00241493 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C23A034E2AEA55C200241493 /* FoodViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C23A03512AEA55ED00241493 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C23A03222AEA497500241493 /* FoodView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +289,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C23A03232AEA497500241493 /* ContentView.swift in Sources */,
+				C23A03232AEA497500241493 /* FoodView.swift in Sources */,
 				C23A03212AEA497500241493 /* FinalCaloriesApp.swift in Sources */,
+				C23A034F2AEA55C200241493 /* FoodViewModel.swift in Sources */,
+				C23A034C2AEA4AB200241493 /* Food.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
