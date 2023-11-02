@@ -8,12 +8,14 @@
 import Foundation
 
 struct Ingredient: Codable{
-    var meals: [MealDetail]
+    var meals: [Food]
 }
 
-struct MealDetail: Codable, Identifiable {
+struct Food: Codable, Identifiable {
     var idIngredient: String
     var strIngredient: String
     var strDescription: String?
     var id: String { idIngredient }
+    var isFavorite: Bool?
+
 }

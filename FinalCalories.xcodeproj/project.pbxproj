@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C236500C2AF38CB9007D69FF /* FoodRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C236500B2AF38CB9007D69FF /* FoodRow.swift */; };
+		C236500F2AF394CA007D69FF /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C236500E2AF394CA007D69FF /* FavoriteButton.swift */; };
 		C23A03212AEA497500241493 /* FinalCaloriesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23A03202AEA497500241493 /* FinalCaloriesApp.swift */; };
-		C23A03232AEA497500241493 /* FoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23A03222AEA497500241493 /* FoodView.swift */; };
+		C23A03232AEA497500241493 /* FoodList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23A03222AEA497500241493 /* FoodList.swift */; };
 		C23A03252AEA497900241493 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C23A03242AEA497900241493 /* Assets.xcassets */; };
 		C23A03292AEA497900241493 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C23A03282AEA497900241493 /* Preview Assets.xcassets */; };
 		C23A03332AEA497A00241493 /* FinalCaloriesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23A03322AEA497A00241493 /* FinalCaloriesTests.swift */; };
@@ -36,9 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C236500B2AF38CB9007D69FF /* FoodRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRow.swift; sourceTree = "<group>"; };
+		C236500E2AF394CA007D69FF /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		C23A031D2AEA497500241493 /* FinalCalories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalCalories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C23A03202AEA497500241493 /* FinalCaloriesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalCaloriesApp.swift; sourceTree = "<group>"; };
-		C23A03222AEA497500241493 /* FoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodView.swift; sourceTree = "<group>"; };
+		C23A03222AEA497500241493 /* FoodList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodList.swift; sourceTree = "<group>"; };
 		C23A03242AEA497900241493 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C23A03262AEA497900241493 /* FinalCalories.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FinalCalories.entitlements; sourceTree = "<group>"; };
 		C23A03282AEA497900241493 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -76,6 +80,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C236500D2AF39495007D69FF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C236500E2AF394CA007D69FF /* FavoriteButton.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		C23A03142AEA497400241493 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +111,7 @@
 		C23A031F2AEA497500241493 /* FinalCalories */ = {
 			isa = PBXGroup;
 			children = (
+				C236500D2AF39495007D69FF /* Helpers */,
 				C23A034D2AEA4ABF00241493 /* Model */,
 				C23A03502AEA55DB00241493 /* ViewModel */,
 				C23A03512AEA55ED00241493 /* View */,
@@ -154,7 +167,8 @@
 		C23A03512AEA55ED00241493 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C23A03222AEA497500241493 /* FoodView.swift */,
+				C23A03222AEA497500241493 /* FoodList.swift */,
+				C236500B2AF38CB9007D69FF /* FoodRow.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -289,9 +303,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C23A03232AEA497500241493 /* FoodView.swift in Sources */,
+				C23A03232AEA497500241493 /* FoodList.swift in Sources */,
 				C23A03212AEA497500241493 /* FinalCaloriesApp.swift in Sources */,
 				C23A034F2AEA55C200241493 /* FoodViewModel.swift in Sources */,
+				C236500F2AF394CA007D69FF /* FavoriteButton.swift in Sources */,
+				C236500C2AF38CB9007D69FF /* FoodRow.swift in Sources */,
 				C23A034C2AEA4AB200241493 /* Food.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
