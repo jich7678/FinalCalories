@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		C236500C2AF38CB9007D69FF /* FoodRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C236500B2AF38CB9007D69FF /* FoodRow.swift */; };
 		C236500F2AF394CA007D69FF /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C236500E2AF394CA007D69FF /* FavoriteButton.swift */; };
+		C23650112AF41E68007D69FF /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23650102AF41E68007D69FF /* TabsView.swift */; };
+		C23650132AF41EBD007D69FF /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23650122AF41EBD007D69FF /* Calculator.swift */; };
+		C23650152AF41EC7007D69FF /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23650142AF41EC7007D69FF /* Map.swift */; };
 		C23A03212AEA497500241493 /* FinalCaloriesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23A03202AEA497500241493 /* FinalCaloriesApp.swift */; };
 		C23A03232AEA497500241493 /* FoodList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23A03222AEA497500241493 /* FoodList.swift */; };
 		C23A03252AEA497900241493 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C23A03242AEA497900241493 /* Assets.xcassets */; };
@@ -40,6 +43,9 @@
 /* Begin PBXFileReference section */
 		C236500B2AF38CB9007D69FF /* FoodRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRow.swift; sourceTree = "<group>"; };
 		C236500E2AF394CA007D69FF /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
+		C23650102AF41E68007D69FF /* TabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
+		C23650122AF41EBD007D69FF /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
+		C23650142AF41EC7007D69FF /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 		C23A031D2AEA497500241493 /* FinalCalories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalCalories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C23A03202AEA497500241493 /* FinalCaloriesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalCaloriesApp.swift; sourceTree = "<group>"; };
 		C23A03222AEA497500241493 /* FoodList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodList.swift; sourceTree = "<group>"; };
@@ -111,10 +117,10 @@
 		C23A031F2AEA497500241493 /* FinalCalories */ = {
 			isa = PBXGroup;
 			children = (
-				C236500D2AF39495007D69FF /* Helpers */,
 				C23A034D2AEA4ABF00241493 /* Model */,
 				C23A03502AEA55DB00241493 /* ViewModel */,
 				C23A03512AEA55ED00241493 /* View */,
+				C236500D2AF39495007D69FF /* Helpers */,
 				C23A03202AEA497500241493 /* FinalCaloriesApp.swift */,
 				C23A03242AEA497900241493 /* Assets.xcassets */,
 				C23A03262AEA497900241493 /* FinalCalories.entitlements */,
@@ -167,8 +173,11 @@
 		C23A03512AEA55ED00241493 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C23650102AF41E68007D69FF /* TabsView.swift */,
 				C23A03222AEA497500241493 /* FoodList.swift */,
 				C236500B2AF38CB9007D69FF /* FoodRow.swift */,
+				C23650122AF41EBD007D69FF /* Calculator.swift */,
+				C23650142AF41EC7007D69FF /* Map.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -307,7 +316,10 @@
 				C23A03212AEA497500241493 /* FinalCaloriesApp.swift in Sources */,
 				C23A034F2AEA55C200241493 /* FoodViewModel.swift in Sources */,
 				C236500F2AF394CA007D69FF /* FavoriteButton.swift in Sources */,
+				C23650112AF41E68007D69FF /* TabsView.swift in Sources */,
+				C23650132AF41EBD007D69FF /* Calculator.swift in Sources */,
 				C236500C2AF38CB9007D69FF /* FoodRow.swift in Sources */,
+				C23650152AF41EC7007D69FF /* Map.swift in Sources */,
 				C23A034C2AEA4AB200241493 /* Food.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

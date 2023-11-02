@@ -11,7 +11,7 @@ import SwiftUI
 struct FinalCaloriesApp: App {
     var body: some Scene {
         WindowGroup {
-            FoodList()
+            TabsView()
         }
     }
 }

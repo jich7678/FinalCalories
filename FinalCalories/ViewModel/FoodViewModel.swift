@@ -30,7 +30,6 @@ class FoodViewModel: ObservableObject {
             for i in meals.indices{
                 meals[i].isFavorite = false
             }
-            
             //print(meals)
         }
     }
