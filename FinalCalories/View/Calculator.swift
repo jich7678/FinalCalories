@@ -9,8 +9,23 @@ import SwiftUI
 
 struct Calculator: View {
     var body: some View {
-        VStack {
-            Text("No Data")
+        ZStack {
+            Color.white
+                .edgesIgnoringSafeArea(.all)
+            
+            VStack {
+                Text("This is a permanent frame")
+                    .font(.title)
+                    .padding()
+                NavigationLink(destination: ListDetailView()) {
+                    Text("Show List")
+                        .foregroundColor(.blue)
+                }
+            }
         }
     }
+}
+
+#Preview {
+    Calculator()
 }

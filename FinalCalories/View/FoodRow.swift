@@ -32,4 +32,3 @@ struct FoodRow: View {
     //    let foods = FoodViewModel().meals
     //    return FoodRow(food: foods[0])
     //}
-    

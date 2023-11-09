@@ -17,5 +17,5 @@ struct Food: Codable, Identifiable {
     var strDescription: String?
     var id: String { idIngredient }
     var isFavorite: Bool?
-
+    var calories: Int?
 }

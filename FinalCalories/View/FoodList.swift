@@ -35,14 +35,28 @@ struct FoodList: View {
 
                 ForEach(searchResults) { food in
                     FoodRow(foodViewModel: foodViewModel,food: food)
-    
                 }
+                HStack {
+                    Spacer()
+                    Button {
+                        print("button pressed")
+                    } label: {
+                        Text("Create List")
+                            .foregroundColor(.white)
+                    }
+                    .padding()
+                    .background(Color.blue)
+                    .clipShape(Capsule())
+                    Spacer()
+                }
+
             }
             .navigationTitle("Foods")
+            
         } detail: {
             Text("Select a Food")
-        } .
-        searchable(text: $inputID, prompt: "Search")
+        }
+        .searchable(text: $inputID, prompt: "Search")
         .onAppear {
             foodViewModel.getIngredient()
         }

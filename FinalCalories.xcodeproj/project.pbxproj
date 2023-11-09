@@ -12,6 +12,8 @@
 		C23650112AF41E68007D69FF /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23650102AF41E68007D69FF /* TabsView.swift */; };
 		C23650132AF41EBD007D69FF /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23650122AF41EBD007D69FF /* Calculator.swift */; };
 		C23650152AF41EC7007D69FF /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23650142AF41EC7007D69FF /* Map.swift */; };
+		C23650172AFC2900007D69FF /* ListDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23650162AFC2900007D69FF /* ListDetailView.swift */; };
+		C23650192AFCFAFF007D69FF /* message-3.txt in Resources */ = {isa = PBXBuildFile; fileRef = C23650182AFCFAFF007D69FF /* message-3.txt */; };
 		C23A03212AEA497500241493 /* FinalCaloriesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23A03202AEA497500241493 /* FinalCaloriesApp.swift */; };
 		C23A03232AEA497500241493 /* FoodList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23A03222AEA497500241493 /* FoodList.swift */; };
 		C23A03252AEA497900241493 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C23A03242AEA497900241493 /* Assets.xcassets */; };
@@ -46,6 +48,9 @@
 		C23650102AF41E68007D69FF /* TabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
 		C23650122AF41EBD007D69FF /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 		C23650142AF41EC7007D69FF /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
+		C23650162AFC2900007D69FF /* ListDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDetailView.swift; sourceTree = "<group>"; };
+		C23650182AFCFAFF007D69FF /* message-3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "message-3.txt"; path = "../../../../Downloads/message-3.txt"; sourceTree = "<group>"; };
+		C236501A2AFCFB09007D69FF /* message-3.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "message-3.txt"; sourceTree = "<group>"; };
 		C23A031D2AEA497500241493 /* FinalCalories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalCalories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C23A03202AEA497500241493 /* FinalCaloriesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalCaloriesApp.swift; sourceTree = "<group>"; };
 		C23A03222AEA497500241493 /* FoodList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodList.swift; sourceTree = "<group>"; };
@@ -125,6 +130,7 @@
 				C23A03242AEA497900241493 /* Assets.xcassets */,
 				C23A03262AEA497900241493 /* FinalCalories.entitlements */,
 				C23A03272AEA497900241493 /* Preview Content */,
+				C236501A2AFCFB09007D69FF /* message-3.txt */,
 			);
 			path = FinalCalories;
 			sourceTree = "<group>";
@@ -148,6 +154,7 @@
 		C23A033B2AEA497A00241493 /* FinalCaloriesUITests */ = {
 			isa = PBXGroup;
 			children = (
+				C23650182AFCFAFF007D69FF /* message-3.txt */,
 				C23A033C2AEA497A00241493 /* FinalCaloriesUITests.swift */,
 				C23A033E2AEA497A00241493 /* FinalCaloriesUITestsLaunchTests.swift */,
 			);
@@ -177,6 +184,7 @@
 				C23A03222AEA497500241493 /* FoodList.swift */,
 				C236500B2AF38CB9007D69FF /* FoodRow.swift */,
 				C23650122AF41EBD007D69FF /* Calculator.swift */,
+				C23650162AFC2900007D69FF /* ListDetailView.swift */,
 				C23650142AF41EC7007D69FF /* Map.swift */,
 			);
 			path = View;
@@ -302,6 +310,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C23650192AFCFAFF007D69FF /* message-3.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +328,7 @@
 				C23650112AF41E68007D69FF /* TabsView.swift in Sources */,
 				C23650132AF41EBD007D69FF /* Calculator.swift in Sources */,
 				C236500C2AF38CB9007D69FF /* FoodRow.swift in Sources */,
+				C23650172AFC2900007D69FF /* ListDetailView.swift in Sources */,
 				C23650152AF41EC7007D69FF /* Map.swift in Sources */,
 				C23A034C2AEA4AB200241493 /* Food.swift in Sources */,
 			);

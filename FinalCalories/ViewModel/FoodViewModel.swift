@@ -30,7 +30,20 @@ class FoodViewModel: ObservableObject {
             for i in meals.indices{
                 meals[i].isFavorite = false
             }
+            
+            
+            
+            
+            
+//            for i in meals.indices{
+//                meals[i].calories = false
+//            }
+            
             //print(meals)
         }
+    }
+    
+    func createList() {
+    
     }
 }
