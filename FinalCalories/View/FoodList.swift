@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct FoodList: View {
-    
     @ObservedObject var foodViewModel = FoodViewModel()
     @State private var showFavoritesOnly = false
     @State private var inputID = ""
+    var callback: (FoodViewModel) -> Void
 
     var filteredFoods: [Food] {
         foodViewModel.meals.filter { food in
@@ -29,26 +29,24 @@ struct FoodList: View {
         //let _ = print(foodViewModel.meals)
         NavigationSplitView {
             List {
+                
+                    
+                
+                   Button(action:{
+                      callback(foodViewModel)
+                    }, label: {
+                        Text("Create List")
+
+                    })
+        
                 Toggle(isOn: $showFavoritesOnly) {
-                    Text("My List")
+                    Text("My Favorites")
                 }
 
                 ForEach(searchResults) { food in
                     FoodRow(foodViewModel: foodViewModel,food: food)
                 }
-                HStack {
-                    Spacer()
-                    Button {
-                        print("button pressed")
-                    } label: {
-                        Text("Create List")
-                            .foregroundColor(.white)
-                    }
-                    .padding()
-                    .background(Color.blue)
-                    .clipShape(Capsule())
-                    Spacer()
-                }
+                
 
             }
             .navigationTitle("Foods")
@@ -79,6 +77,3 @@ struct FoodList: View {
     }
 }
 
-#Preview {
-    FoodList()
-}

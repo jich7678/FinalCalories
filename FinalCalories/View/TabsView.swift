@@ -8,18 +8,27 @@
 import SwiftUI
 
 struct TabsView: View {
+    
+    @State private var lists: [CreatedList] = []
+    var calc = Calculator(lists: [])
+    
+    func addList(allFoods: FoodViewModel){
+        let newList = CreatedList(allFoods: allFoods)
+        lists.append(newList)
+        print(lists)
+    }
     var body: some View {
         VStack {
             TabView {
-                FoodList()
+                FoodList{i in addList(allFoods:i)}
                     .tabItem {
                         Label("Food", systemImage:"carrot")
                     }
-                Calculator()
+                Calculator(lists: lists)
                     .tabItem {
                         Label("Calculator", systemImage:"plus.forwardslash.minus")
                     }
-                Map()
+                MapView()
                     .tabItem {
                         Label("Map", systemImage:"map")
                     }
