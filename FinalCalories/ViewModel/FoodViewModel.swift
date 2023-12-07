@@ -11,8 +11,6 @@ class FoodViewModel: ObservableObject {
     
     @Published var meals = [Food]()
     
-    
-    
     func getIngredient() {
         Task { @MainActor in
             do {

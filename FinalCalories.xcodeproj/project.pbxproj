@@ -24,6 +24,8 @@
 		C23A033F2AEA497A00241493 /* FinalCaloriesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23A033E2AEA497A00241493 /* FinalCaloriesUITestsLaunchTests.swift */; };
 		C23A034C2AEA4AB200241493 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23A034B2AEA4AB200241493 /* Food.swift */; };
 		C23A034F2AEA55C200241493 /* FoodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23A034E2AEA55C200241493 /* FoodViewModel.swift */; };
+		C2C188FA2B22363300D9EB4E /* Markert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C188F92B22363300D9EB4E /* Markert.swift */; };
+		C2C188FE2B22501100D9EB4E /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C188FD2B22501100D9EB4E /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,8 @@
 		C23A033E2AEA497A00241493 /* FinalCaloriesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalCaloriesUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C23A034B2AEA4AB200241493 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		C23A034E2AEA55C200241493 /* FoodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewModel.swift; sourceTree = "<group>"; };
+		C2C188F92B22363300D9EB4E /* Markert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Markert.swift; sourceTree = "<group>"; };
+		C2C188FD2B22501100D9EB4E /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				C23A034B2AEA4AB200241493 /* Food.swift */,
+				C2C188F92B22363300D9EB4E /* Markert.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -187,8 +192,9 @@
 				C236500B2AF38CB9007D69FF /* FoodRow.swift */,
 				C23650122AF41EBD007D69FF /* Calculator.swift */,
 				C23650162AFC2900007D69FF /* ListDetailView.swift */,
-				C23650142AF41EC7007D69FF /* MapView.swift */,
 				C236501B2B18B3AE007D69FF /* CreatedList.swift */,
+				C23650142AF41EC7007D69FF /* MapView.swift */,
+				C2C188FD2B22501100D9EB4E /* WebView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -330,10 +336,12 @@
 				C236500F2AF394CA007D69FF /* FavoriteButton.swift in Sources */,
 				C23650112AF41E68007D69FF /* TabsView.swift in Sources */,
 				C23650132AF41EBD007D69FF /* Calculator.swift in Sources */,
+				C2C188FE2B22501100D9EB4E /* WebView.swift in Sources */,
 				C236500C2AF38CB9007D69FF /* FoodRow.swift in Sources */,
 				C23650172AFC2900007D69FF /* ListDetailView.swift in Sources */,
 				C23650152AF41EC7007D69FF /* MapView.swift in Sources */,
 				C236501C2B18B3AE007D69FF /* CreatedList.swift in Sources */,
+				C2C188FA2B22363300D9EB4E /* Markert.swift in Sources */,
 				C23A034C2AEA4AB200241493 /* Food.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
