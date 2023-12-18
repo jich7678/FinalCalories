@@ -4,9 +4,9 @@ struct Calculator: View {
     @State private var lists: [CreatedList]
 
     init(lists: [CreatedList]) {
-        print("hello")
+        //print("hello")
         self.lists = lists
-        print(self.lists)
+        //print(self.lists)
     }
     var body: some View {
         ZStack {

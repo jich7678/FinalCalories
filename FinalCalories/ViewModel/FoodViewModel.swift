@@ -28,18 +28,38 @@ class FoodViewModel: ObservableObject {
             for i in meals.indices{
                 meals[i].isFavorite = false
             }
-            
-            
-            
-            
-            
-//            for i in meals.indices{
-//                meals[i].calories = false
-//            }
-            
-            //print(meals)
         }
+     //getJSON()
     }
+    
+//    func getJSON() {
+//                
+//                if let filePath = Bundle.main.path(forResource: "caloriesList", ofType: "json"),
+//                let fileUrl = URL(fileURLWithPath: filePath)
+//                print(fileUrl)
+//                let data = try Data(contentsOf: fileUrl)
+//                
+//                let url = Bundle.main.url(forResource: "caloriesList", withExtension: "json")!
+//                let (data, _) = try await URLSession.shared.data(from: url)
+//                print(data)
+//                let ingredients = try JSONDecoder().decode(Ingredient.self, from: data)
+//                print(ingredients.meals[0])
+//                meals = ingredients.meals
+//    }
+    
+//    func loadLocalJson(filename fileName: String) -> [Person]? {
+//        if let url = Bundle.main.url(forResource: fileName, withExtension: "json") {
+//            do {
+//                let data = try Data(contentsOf: url)
+//                let decoder = JSONDecoder()
+//                let jsonData = try decoder.decode(ResponseData.self, from: data)
+//                return jsonData.person
+//            } catch {
+//                print("error:\(error)")
+//            }
+//        }
+//        return nil
+//    }
     
     func createList() {
     

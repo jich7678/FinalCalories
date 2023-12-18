@@ -29,15 +29,12 @@ struct FoodList: View {
         //let _ = print(foodViewModel.meals)
         NavigationSplitView {
             List {
-                
-                    
-                
-                   Button(action:{
-                      callback(foodViewModel)
-                    }, label: {
-                        Text("Create List")
+                Button(action:{
+                  callback(foodViewModel)
+                }, label: {
+                    Text("Create List")
 
-                    })
+                })
         
                 Toggle(isOn: $showFavoritesOnly) {
                     Text("My Favorites")
@@ -46,8 +43,6 @@ struct FoodList: View {
                 ForEach(searchResults) { food in
                     FoodRow(foodViewModel: foodViewModel,food: food)
                 }
-                
-
             }
             .navigationTitle("Foods")
             
@@ -56,6 +51,7 @@ struct FoodList: View {
         }
         .searchable(text: $inputID, prompt: "Search")
         .onAppear {
+            //foodViewModel.getIngredient()
             foodViewModel.getIngredient()
         }
         
@@ -76,4 +72,3 @@ struct FoodList: View {
 //        }
     }
 }
-
